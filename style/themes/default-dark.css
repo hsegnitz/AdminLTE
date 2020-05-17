@@ -315,7 +315,7 @@ h4 {
 }
 
 .layout-boxed {
-  background: url("../../img/boxed-bg-dark.jpg") repeat fixed;
+  background-image: url("../../img/boxed-bg-dark.jpg");
 }
 .not-used {
   background-color: #eee;
