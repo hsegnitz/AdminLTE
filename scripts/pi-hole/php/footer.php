@@ -6,8 +6,8 @@
 *  This file is copyright under the latest version of the EUPL.
 *  Please see LICENSE file for your rights under this license. */ ?>
 
-        </section>
-        <!-- /.content -->
+            </div> <!-- .container-fluid -->
+        </section> <!-- /.content -->
     </div>
     <!-- Modal for custom disable time -->
     <div class="modal fade" id="customDisableModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -48,7 +48,7 @@
     <!-- /.content-wrapper -->
     <footer class="main-footer">
 	<!-- Version Infos -->
-        <div class="pull-right hidden-xs hidden-sm<?php if(isset($core_commit) || isset($web_commit) || isset($FTL_commit)) { ?> hidden-md<?php } ?>">
+        <div class="float-right d-none<?php if(isset($core_commit) || isset($web_commit) || isset($FTL_commit)) { ?> d-lg-inline <?php } else { ?> d-md-inline <?php } ?>">
             <b>Pi-hole Version </b> <?php
             echo $core_current;
             if(isset($core_commit)) { echo " (".$core_branch.", ".$core_commit.")"; }

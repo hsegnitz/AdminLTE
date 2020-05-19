@@ -99,11 +99,6 @@
     }
 }
 
-.main-header > .navbar,
-.navbar > .sidebar-toggle {
-  height: 50px;
-}
-
 #resetButton {
 	font-weight: 700;
 }
@@ -244,15 +239,7 @@
     margin-left: 2px;
 }
 
-.sidebar-toggle:before {
-    font-weight: 900;
-    font-family: "Font Awesome 5 Free";
-}
-
 /* Utilities */
-.text-underline {
-    text-decoration: underline;
-}
 
 .breakall {
     white-space: -moz-pre-wrap;
@@ -274,8 +261,4 @@
 
 .input-group-addon {
 	padding: 0 12px;
-}
-
-.d-none {
-    display: none !important;
 }
