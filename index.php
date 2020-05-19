@@ -27,8 +27,9 @@
 <span class="queries-blocked"></span>
 <span class="graphs-grid"></span>
 <span class="graphs-ticks"></span>
+
 <!-- Small boxes (Stat box) -->
-<div class="row">
+<div class="row pt-4">
     <div class="col-lg-3 col-sm-6">
         <!-- small box -->
         <div class="small-box bg-green" id="total_queries" title="only A + AAAA queries">
@@ -83,7 +84,7 @@
     <!-- ./col -->
 </div>
 
-<div class="row">
+<div class="row mt-4">
     <div class="col-md-12">
     <div class="box" id="queries-over-time">
         <div class="box-header with-border">
@@ -108,7 +109,7 @@
   // a password
   if($auth){ ?>
 
-<div class="row">
+<div class="row mt-4">
     <div class="col-md-12">
     <div class="box" id="clients">
         <div class="box-header with-border">
@@ -127,7 +128,7 @@
     </div>
 </div>
 
-<div class="row">
+<div class="row mt-4">
     <div class="col-md-12 col-lg-6">
     <div class="box" id="query-types-pie">
         <div class="box-header with-border">
@@ -148,7 +149,7 @@
       </div>
     </div>
     <div class="col-md-12 col-lg-6">
-    <div class="box" id="forward-destinations-pie">
+      <div class="box" id="forward-destinations-pie">
         <div class="box-header with-border">
           <h3 class="box-title">Queries answered by</h3>
         </div>
@@ -178,7 +179,7 @@ else
   $tablelayout = "col-md-6 col-lg-6";
 }
 ?>
-<div class="row">
+<div class="row mt-4">
     <div class="<?php echo $tablelayout; ?>">
       <div class="box" id="domain-frequency">
         <div class="box-header with-border">
@@ -233,8 +234,8 @@ else
       <!-- /.box -->
     </div>
 </div>
-<div class="row">
-    <!-- /.col -->
+
+<div class="row mt-4">
     <div class="<?php echo $tablelayout; ?>">
       <div class="box" id="client-frequency">
         <div class="box-header with-border">
