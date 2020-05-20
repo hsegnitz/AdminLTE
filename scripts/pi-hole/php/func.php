@@ -214,14 +214,13 @@ function deleteCustomDNSEntry()
 
 function deleteAllCustomDNSEntries()
 {
-    $handle = fopen($customDNSFile, "r");
+    $handle = fopen('/etc/pihole/custom.list', "r");
     if ($handle)
     {
         try
         {
             while (($line = fgets($handle)) !== false) {
-                $line = str_replace("\r","", $line);
-                $line = str_replace("\n","", $line);
+                $line = str_replace(["\r", "\n"], "", $line);
                 $explodedLine = explode (" ", $line);
 
                 if (count($explodedLine) != 2)
